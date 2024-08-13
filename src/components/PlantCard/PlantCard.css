@@ -1,14 +1,13 @@
 .plant-card{
-    border: 1px solid black;
     padding: 5px 20px;
     border-radius: 10px;
     margin: 20px ;
     position: relative;
     width: 500px;
     height: 140px;    
-    background-color: #98e698;
+    background-color: #ffffff;
     color: #143114;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 15px 2px black;
 }
 .plant-title{
     font-size: 20px;
