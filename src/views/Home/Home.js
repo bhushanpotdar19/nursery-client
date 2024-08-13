@@ -28,8 +28,8 @@ function Home() {
       <h1 className="heading"> Nursery</h1>
       <div className="plantCard-div">
         {
-          plants.map((plant, i)=>{
-            const {_id, name, category, image, price, description} =plant
+          plants.map((plants, i)=>{
+            const {_id, name, category, image, price, description} =plants
             return <PlantCard key={i} _id={_id} name={name} category={category} image={image} price={price} description={description} loadPlants={loadPlants}/>
           })
         }
