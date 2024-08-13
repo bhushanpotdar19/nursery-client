@@ -13,7 +13,7 @@ function Home() {
 
   const loadPlants = async () =>{
     toast.loading("Loading plants....")
-    const response = await axios.get(`http://localhost:5000/plants`)
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/plants`)
     toast.dismiss()
     toast.success("Plants loaded successfully")
     setPlants(response.data.data);
@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <>
-      <h1 className="heading">RJ's Nursery</h1>
+      <h1 className="heading"> Nursery</h1>
       <div className="plantCard-div">
         {
           plants.map((plant, i)=>{
